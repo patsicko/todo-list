@@ -7,12 +7,6 @@ addToDoButton.addEventListener('click', function(e){
     let paragraph = document.createElement('p');
     paragraph.classList.add('style');
     paragraph.innerText = inputField.value;
-   
-
-addToDoButton.addEventListener('click', function(){
-    let paragraph = document.createElement('p');
-    paragraph.classList.add('style');
-    paragraph.innerText = inputField.value;
     toDoContainer.appendChild(paragraph);
     inputField.value = '';
     let done=document.createElement("button");
@@ -59,4 +53,4 @@ console.log("javascript");
             toDoContainer.removeChild(paragraph);
         }
     })
-})
+
