@@ -8,6 +8,11 @@ addToDoButton.addEventListener('click', function(e){
     paragraph.classList.add('style');
     paragraph.innerText = inputField.value;
    
+
+addToDoButton.addEventListener('click', function(){
+    let paragraph = document.createElement('p');
+    paragraph.classList.add('style');
+    paragraph.innerText = inputField.value;
     toDoContainer.appendChild(paragraph);
     inputField.value = '';
     let done=document.createElement("button");
@@ -43,3 +48,15 @@ console.log("javascript");
 
 
 
+    done.addEventListener('click', function(){
+        paragraph.style.textDecoration = 'line-through';
+        
+    })
+    remove.addEventListener('click', function(){
+        remove.innerHTML="";
+        done.innerHTML="";
+        if(confirm('Delete ' + paragraph.innerText + '?')){
+            toDoContainer.removeChild(paragraph);
+        }
+    })
+})

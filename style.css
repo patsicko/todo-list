@@ -1,7 +1,12 @@
 html, body{
     width: 50%;
     margin: 0 auto;
+<<<<<<< HEAD
     font-family: Arial, Helvetica, sans-serif;  
+=======
+    font-family: Arial, Helvetica, sans-serif;
+    
+>>>>>>> 34100382ae6e985ce420cd40a86bbceef9964409
 }
 
 .container {
@@ -49,5 +54,6 @@ html, body{
     height: 20px;
     width: 60px;
     margin-left: 50%;
+    margin-left: 70%;
     color: green;
 }
