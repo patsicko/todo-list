@@ -1,6 +1,13 @@
 let addToDoButton = document.getElementById('addToDo');
 let toDoContainer = document.getElementById('toDoContainer');
 let inputField = document.getElementById('inputField');
+inputField.addEventListener("keyup",(e)=>{
+    console.log(e);
+    if(e.target.dataset.uppercase !=undefined){
+        e.target.value=e.target.value.toUpperCase();
+    }
+    
+})
 
 addToDoButton.addEventListener('click', function(e){
     e.target.style.backgroundColor="yellow";
