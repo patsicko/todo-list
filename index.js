@@ -3,7 +3,7 @@ let toDoContainer = document.getElementById('toDoContainer');
 let inputField = document.getElementById('inputField');
 
 addToDoButton.addEventListener('click', function(e){
-    e.target.style.backgroundColor="green";
+    e.target.style.backgroundColor="yellow";
     let paragraph = document.createElement('p');
     paragraph.classList.add('style');
     paragraph.innerText = inputField.value;
